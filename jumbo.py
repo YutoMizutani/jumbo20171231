@@ -146,7 +146,7 @@ class Main:
             # exit
             break
         else:
-            if len(text) != 9:
+            if len(text) < 8:
                 print('入力桁が誤っています。もう一度入力してください。')
             else:
                 money += lottery.drawing(text)
