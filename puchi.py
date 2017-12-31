@@ -124,7 +124,7 @@ class Main:
             # exit
             break
         else:
-            if len(text) != 8:
+            if len(text) != 6:
                 print('入力桁が誤っています。もう一度入力してください。')
             else:
                 num += 1

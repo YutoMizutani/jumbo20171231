@@ -137,13 +137,13 @@ class Main:
     while True:
         print()
         print('{0}枚，合計当選金額: {1}'.format(num, money))
-        print('組と番号をひと続きで8桁入力')
+        print('組と番号をひと続きで8または9桁入力')
         text = reader.read()
         if text is None:
             # exit
             break
         else:
-            if len(text) != 8:
+            if len(text) < 8:
                 print('入力桁が誤っています。もう一度入力してください。')
             else:
                 num += 1
