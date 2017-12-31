@@ -111,12 +111,13 @@ class Main:
     print(' - 第733回 年末ジャンボプチ 2017年12月31日')
     print(' - 抽選番号参照: http://www.hpfree.com/engeki/mini-puchi.html')
     print('(本プログラム使用を持ちまして，使用者は本プログラム使用による損害等に製作者は一切の責任を負わないことについて同意したものとします。)')
+    num = 0
     money = 0
     reader = ReadEnteredTextStandAloneImpl()
     lottery = JumboPuchi()
     while True:
         print()
-        print('合計当選金額: {0}'.format(money))
+        print('{0}枚，合計当選金額: {1}'.format(num, money))
         print('番号のみをひと続きで6桁入力')
         text = reader.read()
         if text is None:
@@ -126,6 +127,7 @@ class Main:
             if len(text) != 8:
                 print('入力桁が誤っています。もう一度入力してください。')
             else:
+                num += 1
                 money += lottery.drawing(text)
 
 

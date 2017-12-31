@@ -134,12 +134,13 @@ class Main:
     print(' - 第731回 年末ジャンボ 2017年12月31日')
     print(' - 抽選番号参照: http://www.hpfree.com/engeki/')
     print('(本プログラム使用を持ちまして，使用者は本プログラム使用による損害等に製作者は一切の責任を負わないことについて同意したものとします。)')
+    num = 1
     money = 0
     reader = ReadEnteredTextStandAloneImpl()
     lottery = Jumbo()
     while True:
         print()
-        print('合計当選金額: {0}'.format(money))
+        print('{0}枚，合計当選金額: {1}'.format(num, money))
         print('組と番号をひと続きで9または8桁入力')
         text = reader.read()
         if text is None:
@@ -149,6 +150,7 @@ class Main:
             if len(text) < 8:
                 print('入力桁が誤っています。もう一度入力してください。')
             else:
+                num += 1
                 money += lottery.drawing(text)
 
 
