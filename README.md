@@ -17,3 +17,7 @@
 # 注意
 
 本プログラム使用を持ちまして，使用者は本プログラム使用による損害等に製作者は一切の責任を負わないことについて同意したものとします。
+
+# スクリーンショット
+
+![ss1](https://github.com/YutoMizutani/jumbo20171231/blob/master/screenshot.png "ss1")
