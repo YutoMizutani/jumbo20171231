@@ -116,6 +116,7 @@ class Main:
     lottery = JumboPuchi()
     while True:
         print()
+        print('合計当選金額: {0}'.format(money))
         print('番号のみをひと続きで6桁入力')
         text = reader.read()
         if text is None:

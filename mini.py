@@ -135,6 +135,7 @@ class Main:
     lottery = JumboMini()
     while True:
         print()
+        print('合計当選金額: {0}'.format(money))
         print('組と番号をひと続きで8桁入力')
         text = reader.read()
         if text is None:
