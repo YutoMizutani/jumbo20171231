@@ -130,7 +130,7 @@ class Main:
     print(' - 第732回 年末ジャンボミニ 2017年12月31日')
     print(' - 抽選番号参照: http://www.hpfree.com/engeki/shinohara19.html')
     print('(本プログラム使用を持ちまして，使用者は本プログラム使用による損害等に製作者は一切の責任を負わないことについて同意したものとします。)')
-    num = 1
+    num = 0
     money = 0
     reader = ReadEnteredTextStandAloneImpl()
     lottery = JumboMini()
